@@ -4,6 +4,8 @@ import time
 
 count=0
 while(True):
-    count++
-    print("Hello count = "+count)
-    sleep(1)
+    count = count+1
+    print("Hello count = "+str(count))
+    time.sleep(1)
+    if(count > 60):
+        break
